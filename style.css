@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+body{
+    margin: 0px;
+    background-color: aliceblue;
+}
+.Dashboard{
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+/* NAVIGATION */
+.Dashboard .navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px ;
+}
+.Dashboard .navigation img.logo{
+   width: 50px;
+   height: 50px;
+   border-radius: 10px;
+}
+.Dashboard .navigation img.user{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+ }
+ .Dashboard .navigation div .material-icons-outlined{
+  margin-left: 5px;
+  margin-right: 5px; 
+  font-size: 30px;
+  color: #727272;
+}
+  .Dashboard .navigation div{
+    margin-top: 10px;
+}
+/* MAIN DASHBOARD */
+/* SEARCH */
+.Dashboard .main .search form{
+    margin-top: 50px;
+    position: relative;
+}
+.Dashboard .main .search form input{
+   width: 100%;
+   font-size: 16px;
+   padding: 10px 10px 10px 60px;
+   border: 1px solid #dadada;
+   background-color:rgba( 0 0 0 / 0)
+}
+.Dashboard .main .search form span{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: #727272;
+}
+.Dashboard .main .search .notification{
+    margin-top: 20px;
+}
+.Dashboard .main .search .notification span:nth-child(1){
+    margin-right: 15px;
+}
+/* MY PROJECT */
+.Dashboard .main .title {
+    margin-bottom: 30px;
+}
+.Dashboard .main .title h1{
+    font-size: 35px;
+    line-height: 0px;
+}
+.Dashboard .main .title form{
+   margin-top: 40px;
+}
+
+ /* project list */
+ .Dashboard .main .Project_list .Project h2{
+    font-size: 20px;
+    line-height: 0;
+
+ }
+ .Dashboard .main .Project_list .Project p{
+    color: #727272;
+    }
+.Dashboard .main .Project_list .Project ul{
+        list-style: none;
+        position: relative;
+        margin-left: 0px;
+        padding-left: 0px;
+        }
+ .Dashboard .main .Project_list .Project ul li{
+        position: relative;
+        color: #727272;
+        margin-left: 15px;
+    }      
+    .Dashboard .main .Project_list .Project ul li::before{
+        content: "\268A";
+        position: absolute;
+        left: -15px;
+        top: -5px;
+    }   
+    .Dashboard .main .Project_list .Project .meta img{
+        width: 50px;
+        height: 50px;
+        border-radius: 40px;
+        border: 4px solid aliceblue;
+    }   
+    .Dashboard .main .Project_list .Project .meta img.stack {
+        margin-left: -20px;
+    }   
+    .Dashboard .main .Project_list .Project .meta {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }   
+    .Dashboard .main .Project_list .Project  {
+    padding: 20px 20px 20px 60px;
+    background-color: #fff;
+    box-shadow: 1px 1px 40px rgba( 0 0 0 / .01);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    }
+ 
+
