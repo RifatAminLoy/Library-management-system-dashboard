@@ -33,13 +33,11 @@ body{
   font-size: 30px;
   color: #727272;
 }
-  .Dashboard .navigation div{
-    margin-top: 10px;
-}
+  
 /* MAIN DASHBOARD */
 /* SEARCH */
 .Dashboard .main .search form{
-    margin-top: 50px;
+   margin-top: 10px;
     position: relative;
 }
 .Dashboard .main .search form input{
@@ -60,7 +58,18 @@ body{
 }
 .Dashboard .main .search .notification span:nth-child(1){
     margin-right: 15px;
+    position:relative ;
 }
+.Dashboard .main .search .notification span:nth-child(1)::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: sandybrown;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+}
+
 /* MY PROJECT */
 .Dashboard .main .title {
     margin-bottom: 30px;
@@ -121,5 +130,81 @@ body{
     border-radius: 10px;
     position: relative;
     }
+    .Dashboard .main .Project_list .category  {
+       width: 30px;
+       height: 50px;
+       background-color: rebeccapurple;
+       border-radius: 0px 10px 10px 0px;
+       position: absolute;
+       left: 0;
+        }
+        .category_color1{
+            background-color: tan !important;
+        }
+        .category_color2{
+            background-color: rebeccapurple !important;
+        }
+        .category_color3{
+            background-color: sandybrown !important;
+        }
+        .category_color4{
+            background-color: lightcyan !important;
+        }
+        .category_color5{
+            background-color: teal !important;
+        }
+        /* MEDIA QUERY 768xp */
+        @media only screen and (min-width: 768px){
+            /* Dashboard search */
+            .Dashboard .main .search{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+            }
+            section.main .Project_list{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:center;
+               column-gap: 18px;
+            }
+            section.main .Project_list .Project{
+                width: 47%;
+            }
+            section.main .Project_list .Project span{
+             margin-top: 15px ;
+            }
+        }
+        @media only screen and (min-width: 1024px){
+         .Dashboard .navigation,
+         .Dashboard .navigation div span,
+         section.secondary{
+            display: block;
+         }
+         .Dashboard .navigation{
+            width: 60px;
+            position: fixed;
+            z-index: 10 ;
+
+         }
+         section.main{
+            width: 85%;
+            margin-left: 90px;
+            margin-right: 20px ;
+         }
+         .Dashboard .navigation div{
+            margin-top: 21vh ;
+            margin-bottom: 21vh;
+         }
+         .Dashboard .navigation div span{
+           margin-top: 1vh;
+         }
+        }
+        @media only screen and (min-width: 1111px){
+            section.main .Project_list .Project{
+                width: 32%;
+            }
+        }
+
+ 
  
 
